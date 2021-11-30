@@ -1,19 +1,13 @@
 import 'dart:async';
 
-
-
 import 'package:get_it/get_it.dart';
 import 'package:planthome/core/data/datasource/application_preferences.dart';
 import 'package:planthome/core/data/datasource/user_preferences.dart';
 import 'package:planthome/core/data/model/session.dart';
 import 'package:planthome/core/network/dio_web_client_imp.dart';
 import 'package:planthome/views/login/sl.dart';
+import 'package:planthome/views/menu/sl.dart';
 import 'package:planthome/views/registro_usuario/sl.dart';
-
-
-
-
-
 
 import 'package:planthome/core/data/datasource/application_preferences.dart';
 import 'package:planthome/core/data/datasource/user_preferences.dart';
@@ -48,4 +42,5 @@ Future<void> _initCore() async {
 Future<void> _initFeatures() async {
   initFeatureLogin();
   initFeatureRegistro();
+  initFeatureMenu();
 }

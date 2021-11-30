@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
-
-
-
-
-
 import 'package:planthome/core/data/model/session.dart';
 import 'package:planthome/core/service_locator.dart';
 import 'package:planthome/core/ui/pt_navigationbar.dart';
@@ -28,8 +22,9 @@ class _PrincipalPage extends State<PrincipalPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    session= sl<Session>();
+    session = sl<Session>();
   }
+
   @override
   Widget build(BuildContext context) {
     responsive = Responsive(context);
@@ -55,7 +50,9 @@ class _PrincipalPage extends State<PrincipalPage> {
           ),
         ),
       ),
-      bottomNavigationBar: PtNavigationBar(posicion: 0,),
+      bottomNavigationBar: PtNavigationBar(
+        posicion: 0,
+      ),
     );
   }
 }
